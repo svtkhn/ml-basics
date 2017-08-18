@@ -6,8 +6,6 @@ from kmedians import Kmedians
 import utils
 from kmeans import Kmeans
 from quantize_image import QuantImg
-# from kmedians import Kmedians
-# from quantize_image import ImageQuantizer
 from sklearn.cluster import DBSCAN
 import linear_model
 
@@ -50,11 +48,6 @@ if __name__ == '__main__':
         print("\nFigure saved as '%s'" % fname)
 
 
-
-
-
-
-
     if question == '1.2':
         X = utils.load_dataset('clusterData')['X']
 
@@ -84,17 +77,6 @@ if __name__ == '__main__':
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     if question == '1.3':
         # X = utils.load_dataset('clusterData2')['X']
         # models = []
@@ -112,32 +94,6 @@ if __name__ == '__main__':
         # plt.savefig(fname)
         # print("\nFigure saved as '%s'" % fname)
         #
-
-        # ELBOW
-
-        # X = utils.load_dataset('clusterData2')['X']
-        #
-        # k = np.arange(0, 15)
-        # min_errors = np.zeros(k.size)
-        # for kk in k:
-        #     models = []
-        #     errors = np.zeros(50)
-        #     for i in range(0, 50):
-        #         model = Kmeans(k=kk + 1)
-        #         model.fit(X)
-        #         models.append(model)
-        #         errors[i] = model.error(X)
-        #
-        #     min_errors[kk] = (np.min(errors))
-        #
-        # plt.plot(k, min_errors, label="min_errors")
-        # plt.xlabel("k")
-        # plt.ylabel("Error")
-        # plt.legend()
-        # fname = os.path.join("..", "figs", "1.3.graph.pdf")
-        # plt.savefig(fname)
-        # print("\nFigure saved as '%s'" % fname)
-
 
 
 
